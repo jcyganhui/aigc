@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>詌椲</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .yy {
+        box-shadow: 6px 4px 5px #bdbbbb;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin: right 8px;
+      }
+      .mgt8 {
+        margin: top 8px;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(129, 126, 126);
+        font-size: 14px;
+        color: black;
+      }
+      @media (max-width: 600px) {
+        .cebian {
+          display: none;
+        }
+        .neirong {
+          flex-direction: column;
+        }
+        .shuju {
+          flex-direction: column;
+        }
+      }
+      .youqu {
+        margin-left: 8px;
+      }
+      .cleanhf {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
+        background: rgb(214, 231, 151);
+      }
+    </style>
+  </head>
+
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 1" class="baise mg8 mgr8 mgt8 yy">
+      <!--头像and导航-->
+      <div
+        class="flex"
+        style="
+          padding: 20px;
+          align-items: center;
+          ustify-content: center;
+          border-bottom: #bdbbbb;
+        "
+      >
+        <img src="./头像.jpg" width="40px" height="40px" alt="头像" />
+        <div style="margin-left: 15px">詌椲</div>
+      </div>
+      <div class="flex1">
+        <div class="daohang"><b>实用网址</b></div>
+        <div class="daohang">
+          <a class="cleanhf" href="https://weibo.com/login.php/">微博热搜</a>
+        </div>
+        <div class="daohang">
+          <a class="cleanhf" href="https://www.bilibili.com/">哔哩哔哩</a>
+        </div>
+        <div class="daohang">
+          <a class="cleanhf" href="https://www.toutiao.com/?wid=1660491536185"
+            >今日头条</a
+          >
+        </div>
+        <div class="daohang">
+          <a class="cleanhf" href="https://index.baidu.com/v2/index.html#/"
+            >百度指数</a
+          >
+        </div>
+        <div class="daohang">
+          <a class="cleanhf" href="https://www.douyin.com/">抖音热播</a>
+        </div>
+      </div>
+    </div>
+    <!--主栏-->
+    <div class="flex1 flex column mgr8 mgt8">
+      <!--top-->
+      <div style="height: 120px; z-index: 1" class="baise mg8 mgr8 mgt8 yy">
+        <h1 style="text-align: center">AIGC———人工智能辅助用户进行创作</h1>
+      </div>
+      <!--内容-->
+      <div style="overflow: auto" class="flex1 flex mg8 mgr8 mgt8 neirong">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8 mgr8 mgt8">
+          <!--数据区-->
+          <div class="flex shuju">
+            <!--数据块-->
+            <div
+              style="height: 50px; text-align: center"
+              class="flex1 baise mg8 mgr8 mgt8 yy"
+            >
+              <a
+                class="cleanhf"
+                href="https://weibo.com/newlogin?tabtype=search&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2F"
+              >
+                <b> 热点<br />追踪</b>
+              </a>
+            </div>
+            <div
+              style="height: 50px; text-align: center"
+              class="flex1 baise mg8 mgr8 mgt8 yy"
+            >
+              <a class="cleanhf" href="https://pixabay.com/">
+                <b>视频<br />素材</b></a
+              >
+            </div>
+            <div
+              style="height: 50px; text-align: center"
+              class="flex1 baise mg8 mgr8 mgt8 yy"
+            >
+              <a
+                class="cleanhf"
+                href="https://music.163.com/#/discover/toplist"
+              >
+                <b>音频<br />素材</b></a
+              >
+            </div>
+            <div
+              style="height: 50px; text-align: center"
+              class="flex1 baise mg8 mgr8 mgt8 yy"
+            >
+              <a class="cleanhf" href="http://www.aiivip.com/">
+                <b>文本<br />素材</b>
+              </a>
+            </div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <div style="height: 160px" class="baise mg8 mgr8 mgt8 yy">
+              今日热点
+            </div>
+            <div style="height: 160px" class="baise mg8 mgr8 mgt8 yy">
+              本周热点
+            </div>
+            <div style="height: 160px" class="baise mg8 mgr8 mgt8 yy">
+              创作工具分享
+            </div>
+            <div style="height: 160px" class="baise mg8 mgr8 mgt8 yy">
+              每日素材放送
+            </div>
+            <div style="height: 160px" class="baise mg8 mgr8 mgt8 yy"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mg8 mgr8 mgt8 youqu">
+          <!--提示区-->
+          <div style="height: 300px" class="baise mg8 mgr8 mgt8 yy">
+            网站素材引用自网络，侵删
+          </div>
+          <!--消息区-->
+          <div style="height: 300px" class="baise mg8 mgr8 mgt8 yy">
+            网站素材已更新。欢迎使用！
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
